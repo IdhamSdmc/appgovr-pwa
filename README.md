@@ -41,7 +41,13 @@ Your app is ready to be deployed.
 
 You can find detailed instructions on using Create React App and many tips in [its documentation](https://facebook.github.io/create-react-app/).
 
-# Remove from terminal
+## Remove from terminal
 ```bash
 rm C:project/directory/file -r -fo
+```
+## Cómo eliminar archivos de un repositorio Git después de ignorarlos
+[Tutorial](https://www.arsys.es/blog/eliminar-archivos-repositorio-git)
+```bash
+git rm --cached nombre_archivo
+git rm -r --cached nombre_directorio
 ```
