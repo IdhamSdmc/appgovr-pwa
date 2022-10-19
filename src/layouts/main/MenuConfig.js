@@ -22,7 +22,8 @@ const menuConfig = [
   {
     title: 'Acerca de Nosotros',
     icon: <Icon icon={roundGrain} {...ICON_SIZE} />,
-    path: PATH_PAGE.about
+    // path: PATH_PAGE.about
+    path: '/'
   }
   // {
   //   title: 'Pages',

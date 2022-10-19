@@ -89,7 +89,7 @@ export default function LandingHero() {
 
             <motion.div variants={varFadeInRight}>
               <Typography sx={{ color: 'common.white' }}>
-                Innova los procesos de tu empresa simulando nuevas formas de trabajo.
+                Innova los procesos de tu empresa simulando ecenarios con experiencias enriquecedoras para tu negocio.
               </Typography>
             </motion.div>
 
