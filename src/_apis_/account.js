@@ -13,8 +13,8 @@ const JWT_EXPIRES_IN = '5 days';
 const users = [
   {
     id: '8864c717-587d-472a-929a-8e5f298024da-0',
-    displayName: 'Isac Daniel',
-    email: 'isacd@gmail.com',
+    displayName: 'Dr. Anne',
+    email: 'user@gmail.com',
     password: '123456',
     photoURL: '/static/mock-images/avatars/avatar_default.jpg',
     phoneNumber: '+40 777666555',

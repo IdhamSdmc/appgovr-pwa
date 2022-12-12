@@ -47,23 +47,23 @@ export default function UserAccount() {
       icon: <Icon icon={roundAccountBox} width={20} height={20} />,
       component: <AccountGeneral />
     },
+    // {
+    //   value: 'billing',
+    //   icon: <Icon icon={roundReceipt} width={20} height={20} />,
+    //   component: <AccountBilling />
+    // },
+    // {
+    //   value: 'notifications',
+    //   icon: <Icon icon={bellFill} width={20} height={20} />,
+    //   component: <AccountNotifications />
+    // },
+    // {
+    //   value: 'social_links',
+    //   icon: <Icon icon={shareFill} width={20} height={20} />,
+    //   component: <AccountSocialLinks />
+    // },
     {
-      value: 'billing',
-      icon: <Icon icon={roundReceipt} width={20} height={20} />,
-      component: <AccountBilling />
-    },
-    {
-      value: 'notifications',
-      icon: <Icon icon={bellFill} width={20} height={20} />,
-      component: <AccountNotifications />
-    },
-    {
-      value: 'social_links',
-      icon: <Icon icon={shareFill} width={20} height={20} />,
-      component: <AccountSocialLinks />
-    },
-    {
-      value: 'change_password',
+      value: 'Credenciales',
       icon: <Icon icon={roundVpnKey} width={20} height={20} />,
       component: <AccountChangePassword />
     }
@@ -74,14 +74,14 @@ export default function UserAccount() {
   };
 
   return (
-    <Page title="User: Account Settings | Minimal-UI">
+    <Page title="Cuenta de usuario | GoVR">
       <Container maxWidth={themeStretch ? false : 'lg'}>
         <HeaderBreadcrumbs
-          heading="Account"
+          heading="Cuenta"
           links={[
             { name: 'Dashboard', href: PATH_DASHBOARD.root },
-            { name: 'User', href: PATH_DASHBOARD.user.root },
-            { name: 'Account Settings' }
+            { name: 'Usuario', href: PATH_DASHBOARD.user.root },
+            { name: 'Configuración de cuenta' }
           ]}
         />
 

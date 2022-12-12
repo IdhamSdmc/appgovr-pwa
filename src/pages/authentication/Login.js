@@ -1,14 +1,14 @@
 import { capitalCase } from 'change-case';
-import { Link as RouterLink } from 'react-router-dom';
+// import { Link as RouterLink } from 'react-router-dom';
 // material
 import { styled } from '@material-ui/core/styles';
 import { Box, Card, Stack, Link, Tooltip, Container, Typography, Button } from '@material-ui/core';
 // routes
-import { PATH_AUTH } from '../../routes/paths';
+// import { PATH_AUTH } from '../../routes/paths';
 // hooks
 import useAuth from '../../hooks/useAuth';
 // layouts
-import AuthLayout from '../../layouts/AuthLayout';
+// import AuthLayout from '../../layouts/AuthLayout';
 // components
 import Page from '../../components/Page';
 import { MHidden } from '../../components/@material-extend';
@@ -16,6 +16,7 @@ import { LoginForm } from '../../components/authentication/login';
 import AuthFirebaseSocials from '../../components/authentication/AuthFirebaseSocial';
 
 // ----------------------------------------------------------------------
+import { supabase } from '../../supabaseClient';
 
 const RootStyle = styled(Page)(({ theme }) => ({
   [theme.breakpoints.up('md')]: {
@@ -43,7 +44,6 @@ const ContentStyle = styled('div')(({ theme }) => ({
 }));
 
 // ----------------------------------------------------------------------
-
 export default function Login() {
   const { method, login } = useAuth();
 
@@ -57,12 +57,12 @@ export default function Login() {
 
   return (
     <RootStyle title="Login | GOVR">
-      <AuthLayout>
+      {/* <AuthLayout>
         ¿No tienes cuenta? &nbsp;
         <Link underline="none" variant="subtitle2" component={RouterLink} to={PATH_AUTH.register}>
           Conoce GOVR
         </Link>
-      </AuthLayout>
+      </AuthLayout> */}
 
       <MHidden width="mdDown">
         <SectionStyle>
@@ -98,14 +98,14 @@ export default function Login() {
             </Button>
           )}
 
-          <MHidden width="smUp">
+          {/* <MHidden width="smUp">
             <Typography variant="body2" align="center" sx={{ mt: 3 }}>
               ¿No tienes cuenta?&nbsp;
               <Link variant="subtitle2" component={RouterLink} to={PATH_AUTH.register}>
                 Inicia aquí
               </Link>
             </Typography>
-          </MHidden>
+          </MHidden> */}
         </ContentStyle>
       </Container>
     </RootStyle>

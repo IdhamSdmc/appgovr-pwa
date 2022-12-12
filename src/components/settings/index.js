@@ -64,7 +64,7 @@ export default function Settings() {
             boxShadow: (theme) => theme.customShadows.z12
           }}
         >
-          <Tooltip title="Settings">
+          <Tooltip title="Configurar">
             <MIconButton
               color="inherit"
               onClick={handleToggle}

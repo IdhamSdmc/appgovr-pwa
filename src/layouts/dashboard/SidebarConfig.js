@@ -29,17 +29,17 @@ const sidebarConfig = [
   // GENERAL
   // ----------------------------------------------------------------------
   {
-    subheader: 'SERVICIOS',
+    subheader: 'SERVICIOS VR',
     items: [
       {
-        title: 'Configurar Juegos',
+        title: 'Fobias',
         path: PATH_DASHBOARD.general.app,
         icon: ICONS.booking
-      },
+      }
       // { title: 'e-commerce', path: PATH_DASHBOARD.general.ecommerce, icon: ICONS.ecommerce },
-      { title: 'Dispositivos RV', path: PATH_DASHBOARD.general.analytics, icon: ICONS.kanban },
+      // { title: 'Dispositivos RV', path: PATH_DASHBOARD.general.analytics, icon: ICONS.kanban }
       // { title: 'banking', path: PATH_DASHBOARD.general.banking, icon: ICONS.banking },
-      { title: 'Subscripciones y pagos', path: PATH_DASHBOARD.general.booking, icon: ICONS.ecommerce }
+      // { title: 'Subscripciones y pagos', path: PATH_DASHBOARD.general.booking, icon: ICONS.ecommerce }
     ]
   },
 

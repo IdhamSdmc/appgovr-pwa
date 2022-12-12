@@ -8,6 +8,8 @@
 /.vscode
 #Fleet
 /.fleet
+#IDEA
+/.idea
 # testing
 /coverage
 

@@ -106,8 +106,8 @@ export default function AccountGeneral() {
                       color: 'text.secondary'
                     }}
                   >
-                    Allowed *.jpeg, *.jpg, *.png, *.gif
-                    <br /> max size of {fData(3145728)}
+                    Formatos permitidos *.jpeg, *.jpg, *.png, *.gif
+                    <br /> tamaño máximo {fData(3145728)}
                   </Typography>
                 }
               />
@@ -116,12 +116,12 @@ export default function AccountGeneral() {
                 {touched.photoURL && errors.photoURL}
               </FormHelperText>
 
-              <FormControlLabel
+              {/* <FormControlLabel
                 control={<Switch {...getFieldProps('isPublic')} color="primary" />}
                 labelPlacement="start"
                 label="Public Profile"
                 sx={{ mt: 5 }}
-              />
+              /> */}
             </Card>
           </Grid>
 
@@ -129,16 +129,16 @@ export default function AccountGeneral() {
             <Card sx={{ p: 3 }}>
               <Stack spacing={{ xs: 2, md: 3 }}>
                 <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
-                  <TextField fullWidth label="Name" {...getFieldProps('displayName')} />
-                  <TextField fullWidth disabled label="Email Address" {...getFieldProps('email')} />
+                  <TextField fullWidth label="Nombre" {...getFieldProps('displayName')} />
+                  <TextField fullWidth disabled label="Correo electrónico" {...getFieldProps('email')} />
                 </Stack>
 
                 <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
-                  <TextField fullWidth label="Phone Number" {...getFieldProps('phoneNumber')} />
-                  <TextField fullWidth label="Address" {...getFieldProps('address')} />
+                  <TextField fullWidth label="Teléfono" {...getFieldProps('phoneNumber')} />
+                  <TextField fullWidth label="Dirección" {...getFieldProps('address')} />
                 </Stack>
 
-                <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
+                {/* <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
                   <TextField
                     select
                     fullWidth
@@ -164,12 +164,12 @@ export default function AccountGeneral() {
                   <TextField fullWidth label="Zip/Code" {...getFieldProps('zipCode')} />
                 </Stack>
 
-                <TextField {...getFieldProps('about')} fullWidth multiline minRows={4} maxRows={4} label="About" />
+                <TextField {...getFieldProps('about')} fullWidth multiline minRows={4} maxRows={4} label="About" /> */}
               </Stack>
 
               <Box sx={{ mt: 3, display: 'flex', justifyContent: 'flex-end' }}>
                 <LoadingButton type="submit" variant="contained" loading={isSubmitting}>
-                  Save Changes
+                  Guardar
                 </LoadingButton>
               </Box>
             </Card>
