@@ -21,7 +21,9 @@ import {
   RadioGroup,
   FormLabel,
   FormControlLabel,
-  FormControl
+  FormControl,
+  Snackbar,
+  Alert
 } from '@material-ui/core';
 import { Settings } from '@material-ui/icons';
 import { supabase } from '../../../supabaseClient';
@@ -70,6 +72,14 @@ export default function AppFeatured() {
   const [first, setfirst] = useState([]);
 
   const [open, setOpen] = useState(false);
+  const [alert, setAlert] = useState(false);
+
+  const alertClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setAlert(false);
+  };
   const [fobia, SetFobia] = useState(null);
 
   const [form, setForm] = useState({
@@ -81,7 +91,7 @@ export default function AppFeatured() {
 
   const handleChange = (prop) => (event) => {
     console.log(event.target.value);
-    // setForm({ ...form, [prop]: event.target.value });
+    setForm({ ...form, [prop]: event.target.value });
   };
   const handleClickOpen = (id) => {
     // console.log(first[id]);
@@ -127,6 +137,10 @@ export default function AppFeatured() {
         place: form.place
       })
       .eq('id', id);
+    if (!error) {
+      setAlert(true);
+      await fnLevels();
+    }
   };
   useEffect(() => {
     fnLevels();
@@ -176,7 +190,7 @@ export default function AppFeatured() {
               defaultValue={form?.lighting}
               helperText="Seleccionar valor"
               fullWidth
-              onChange={handleChange}
+              onChange={handleChange('lighting')}
             >
               {currencies.map((option) => (
                 <MenuItem key={option.value} value={option.value}>
@@ -191,7 +205,7 @@ export default function AppFeatured() {
               aria-labelledby="demo-controlled-radio-buttons-group"
               name="controlled-radio-buttons-group"
               defaultValue={form?.dia_noche}
-              onChange={handleChange}
+              onChange={handleChange('dia_noche')}
             >
               <FormControlLabel value="1" control={<Radio />} label="Día" />
               <FormControlLabel value="0" control={<Radio />} label="Noche" />
@@ -205,7 +219,7 @@ export default function AppFeatured() {
               defaultValue={form?.place}
               helperText="Seleccionar valor"
               fullWidth
-              onChange={handleChange}
+              onChange={handleChange('place')}
             >
               {places.map((option) => (
                 <MenuItem key={option.value} value={option.value}>
@@ -220,6 +234,16 @@ export default function AppFeatured() {
           <Button onClick={handleSave}>GUARDAR</Button>
         </DialogActions>
       </Dialog>
+      <Snackbar
+        open={alert}
+        autoHideDuration={6000}
+        onClose={alertClose}
+        anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+      >
+        <Alert onClose={alertClose} severity="success" sx={{ width: '100%' }}>
+          Datos actualizados
+        </Alert>
+      </Snackbar>
     </Container>
   );
 }
