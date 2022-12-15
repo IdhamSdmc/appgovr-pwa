@@ -82,10 +82,6 @@ const places = [
   {
     value: 'Garage',
     label: 'Garage'
-  },
-  {
-    value: 'Almacen',
-    label: 'Almacen'
   }
 ];
 export default function AppFeatured() {
@@ -220,15 +216,25 @@ export default function AppFeatured() {
             </TextField>
           </div>
           <div>
-            <FormLabel id="demo-controlled-radio-buttons-group">Día / Noche</FormLabel>
+            <FormLabel id="demo-controlled-radio-buttons-group">Tipo de Movimiento</FormLabel>
             <RadioGroup
               aria-labelledby="demo-controlled-radio-buttons-group"
               name="controlled-radio-buttons-group"
               defaultValue={form?.dia_noche}
               onChange={handleChange('dia_noche')}
             >
-              <FormControlLabel value="1" control={<Radio />} label="Día" />
-              <FormControlLabel value="0" control={<Radio />} label="Noche" />
+              <FormControlLabel
+                value="1"
+                control={<Radio />}
+                label="Estático"
+                disabled={form.id === 1 || form.id === 3}
+              />
+              <FormControlLabel
+                value="0"
+                control={<Radio />}
+                label="Dinámico"
+                disabled={form.id === 1 || form.id === 3}
+              />
             </RadioGroup>
           </div>
           <div>
