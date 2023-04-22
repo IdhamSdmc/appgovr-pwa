@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { NavLink as RouterLink, useLocation } from 'react-router-dom';
 // material
 import { styled } from '@material-ui/core/styles';
@@ -72,7 +73,7 @@ export default function MainNavbar() {
             <Logo />
           </RouterLink>
           <Label color="info" sx={{ ml: 1 }}>
-            GOVR LATAM
+          ENVISION VR LATAM
           </Label>
           <Box sx={{ flexGrow: 1 }} />
 

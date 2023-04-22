@@ -15,7 +15,7 @@ const ICON_SIZE = {
 
 const menuConfig = [
   {
-    title: 'GOVR',
+    title: 'ENVISION VR',
     icon: <Icon icon={homeFill} {...ICON_SIZE} />,
     path: '/'
   },

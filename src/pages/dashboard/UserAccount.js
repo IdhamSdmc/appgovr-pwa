@@ -74,7 +74,7 @@ export default function UserAccount() {
   };
 
   return (
-    <Page title="Cuenta de usuario | GoVR">
+    <Page title="Cuenta de usuario | Envision VR">
       <Container maxWidth={themeStretch ? false : 'lg'}>
         <HeaderBreadcrumbs
           heading="Cuenta"

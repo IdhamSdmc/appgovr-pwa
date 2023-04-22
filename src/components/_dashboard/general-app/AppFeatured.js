@@ -164,6 +164,9 @@ export default function AppFeatured() {
 
   return (
     <Container maxWidth="xl">
+      <Typography gutterBottom variant="h3" component="div">
+        TRANSTORNOS DE ANSIEDAD GENERALIZADA (TAG)
+      </Typography>
       <Grid container spacing={5}>
         {first.map((value, index) => (
           <Grid item xs={12} sm={6} md={4} lg={4} xl={3} key={index}>

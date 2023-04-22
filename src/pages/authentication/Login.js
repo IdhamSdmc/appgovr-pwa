@@ -56,7 +56,7 @@ export default function Login() {
   };
 
   return (
-    <RootStyle title="Login | GOVR">
+    <RootStyle title="Login | ENVISION VR">
       {/* <AuthLayout>
         ¿No tienes cuenta? &nbsp;
         <Link underline="none" variant="subtitle2" component={RouterLink} to={PATH_AUTH.register}>
@@ -78,7 +78,7 @@ export default function Login() {
           <Stack direction="row" alignItems="center" sx={{ mb: 5 }}>
             <Box sx={{ flexGrow: 1 }}>
               <Typography variant="h4" gutterBottom>
-                Inicia sesión en GOVR
+                Inicia sesión en ENVISION VR
               </Typography>
               <Typography sx={{ color: 'text.secondary' }}>Introduzca sus datos a continuación.</Typography>
             </Box>

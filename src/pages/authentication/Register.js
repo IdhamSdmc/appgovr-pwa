@@ -48,7 +48,7 @@ export default function Register() {
   const { method } = useAuth();
 
   return (
-    <RootStyle title="Register | GOVR">
+    <RootStyle title="Register | ENVISION VR">
       <AuthLayout>
         ¿Ya tienes una cuenta? &nbsp;
         <Link underline="none" variant="subtitle2" component={RouterLink} to={PATH_AUTH.login}>

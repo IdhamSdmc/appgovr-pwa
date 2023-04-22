@@ -29,7 +29,7 @@ const ContentStyle = styled('div')(({ theme }) => ({
 
 export default function LandingPage() {
   return (
-    <RootStyle title="GoVR LATAM" id="move_top">
+    <RootStyle title="ENVISION VR" id="move_top">
       <LandingHero />
       <ContentStyle>
         <LandingMinimal />

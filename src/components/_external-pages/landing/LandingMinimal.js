@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 // material
 import { alpha, useTheme, styled } from '@material-ui/core/styles';
 import { Box, Grid, Card, Container, Typography, useMediaQuery } from '@material-ui/core';
@@ -100,7 +101,7 @@ export default function LandingMinimalHelps() {
         <Box sx={{ mb: { xs: 10, md: 25 } }}>
           <MotionInView variants={varFadeInUp}>
             <Typography component="p" variant="overline" sx={{ mb: 2, color: 'text.secondary', textAlign: 'center' }}>
-              govr latam
+            EnvisionVR latam
             </Typography>
           </MotionInView>
           <MotionInView variants={varFadeInDown}>

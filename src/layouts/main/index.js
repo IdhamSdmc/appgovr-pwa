@@ -40,7 +40,7 @@ export default function MainLayout() {
             <Typography variant="caption" component="p">
               © Todos los derechos reservsados
               <br /> made by &nbsp;
-              <Link href="https://govrlatam.com/">govrlatam.com</Link>
+              <Link href="https://envision.pe/">envision.pe</Link>
             </Typography>
           </Container>
         </Box>

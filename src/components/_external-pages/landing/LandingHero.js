@@ -82,7 +82,7 @@ export default function LandingHero() {
                 <br />
                 en Realidad Virtual <br /> con
                 <Typography component="span" variant="h1" sx={{ color: 'primary.main' }}>
-                  &nbsp;GoVR
+                  &nbsp;EnvisionVR
                 </Typography>
               </Typography>
             </motion.div>

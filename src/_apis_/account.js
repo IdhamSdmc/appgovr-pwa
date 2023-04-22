@@ -13,7 +13,7 @@ const JWT_EXPIRES_IN = '5 days';
 const users = [
   {
     id: '8864c717-587d-472a-929a-8e5f298024da-0',
-    displayName: 'Dr. Anne',
+    displayName: 'Psicól. Jorge Hernandez',
     email: 'user@gmail.com',
     password: '123456',
     photoURL: '/static/mock-images/avatars/avatar_default.jpg',
@@ -24,7 +24,7 @@ const users = [
     city: 'San Francisco',
     zipCode: '94116',
     about: 'Praesent turpis. Phasellus viverra nulla ut metus varius laoreet. Phasellus tempus.',
-    role: 'admin',
+    role: 'Especialista',
     isPublic: true
   }
 ];
