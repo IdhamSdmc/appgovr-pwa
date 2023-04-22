@@ -3,7 +3,7 @@ import { useState } from 'react';
 import searchFill from '@iconify/icons-eva/search-fill';
 // material
 import { styled, alpha } from '@material-ui/core/styles';
-import { Box, Input, Slide, Button, InputAdornment, ClickAwayListener } from '@material-ui/core';
+import { Box, Input, Slide, Button, InputAdornment, ClickAwayListener, Typography } from '@material-ui/core';
 // components
 import { MIconButton } from '../../components/@material-extend';
 
@@ -51,6 +51,7 @@ export default function Searchbar() {
         {!isOpen && (
           <MIconButton onClick={handleOpen}>
             <Icon icon={searchFill} width={20} height={20} />
+            <Typography>Buscar Tratamiento</Typography>
           </MIconButton>
         )}
 

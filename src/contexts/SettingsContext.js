@@ -71,8 +71,8 @@ SetColor.propTypes = {
 
 function SetColor(themeColor) {
   let color;
-  const DEFAULT = PRIMARY_COLOR[0];
-  const PURPLE = PRIMARY_COLOR[1];
+  const PURPLE = PRIMARY_COLOR[0];
+  const DEFAULT = PRIMARY_COLOR[1];
   const CYAN = PRIMARY_COLOR[2];
   const BLUE = PRIMARY_COLOR[3];
   const ORANGE = PRIMARY_COLOR[4];

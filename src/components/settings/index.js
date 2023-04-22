@@ -111,10 +111,10 @@ export default function Settings() {
                 <SettingDirection />
               </Stack>
 
-              <Stack spacing={1.5}>
+              {/* <Stack spacing={1.5}>
                 <Typography variant="subtitle2">Color</Typography>
                 <SettingColor />
-              </Stack>
+              </Stack> */}
 
               <Stack spacing={1.5}>
                 <Typography variant="subtitle2">Extender</Typography>
